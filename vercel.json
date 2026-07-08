@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://yuvag123-glaucoma-backend.hf.space/api/:path*"
+    },
+    {
+      "source": "/uploads/:path*",
+      "destination": "https://yuvag123-glaucoma-backend.hf.space/uploads/:path*"
+    }
+  ]
+}
