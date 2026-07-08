@@ -28,8 +28,10 @@ RUN pip install --no-cache-dir --upgrade pip && \
 COPY backend /code/backend
 COPY ml /code/ml
 
-# Create the uploads folder with write permissions
-RUN mkdir -p /code/uploads && chmod -R 777 /code/uploads
+# Create the uploads folder with write permissions and set ownership for UID 1000
+RUN mkdir -p /code/uploads && \
+    chown -R 1000:1000 /code && \
+    chmod -R 777 /code/uploads
 
 # Expose port 7860 (Hugging Face Spaces requirement)
 EXPOSE 7860
