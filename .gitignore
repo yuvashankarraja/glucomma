@@ -1,0 +1,33 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+web_modules/
+
+# Build outputs
+dist/
+build/
+tmp/
+out/
+
+# Python Virtual Environments
+venv/
+.venv/
+env/
+.env
+ENV/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local Database and Upload Cache files
+*.db
+uploads/
+test_glaucoma.db
+glaucoma.db
+
+# OS files
+.DS_Store
+Thumbs.db
